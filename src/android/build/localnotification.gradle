@@ -27,8 +27,6 @@ if (!project.ext.has('appShortcutBadgerVersion')) {
     ext.appShortcutBadgerVersion = '1.1.19'
 }
 
-configurations.all {exclude group: 'com.android.support', module: 'support-v4'}
-
 dependencies {
     compile "me.leolin:ShortcutBadger:${appShortcutBadgerVersion}@aar"
 }
